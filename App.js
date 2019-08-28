@@ -3,6 +3,11 @@ import { StyleSheet, Text, View } from 'react-native';
 import * as Font from 'expo-font';
 import {AppLoading} from 'expo';
 import MealsNavigator from "./navigation/MealsNavigator";
+
+//To optimize speed of screens
+import {useScreens} from 'react-native-screens';
+useScreens();
+
 const fetchFonts = () => {
   return Font.loadAsync({
     'open-sans-bold': require('./assets/fonts/OpenSans-Bold.ttf'),
