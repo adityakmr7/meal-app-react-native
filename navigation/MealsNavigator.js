@@ -24,6 +24,9 @@ const defaultStackNavOptions = {
         backgroundColor: Platform.OS === 'android' ? Colors.primaryColor: 
         'white'
     },
+    headerTitleStyle: {
+        fontFamily: 'open-sans-bold'
+    },
     headerTintColor: 'white'
 }
 
@@ -77,7 +80,8 @@ const tabScreenConfig= {
                 color={tabInfo.tintColor}
                 />
             },
-            tabBarColor:  Colors.accentColor
+            tabBarColor:  Colors.accentColor,
+            tabBarLabel: 'Meals'
         }
     }
 }
@@ -91,6 +95,9 @@ const MealsFavNavigator = Platform.OS === 'android'
         tabScreenConfig,
     {
     tabBarOptions: {
+        labelStyle: {
+            fontFamily: 'open-sans-bold'
+        },
         activeTintColor: Colors.accentColor
     }
 });
