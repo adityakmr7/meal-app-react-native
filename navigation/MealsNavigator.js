@@ -17,7 +17,7 @@ import FavoritesScreen from '../screens/FavoritesScreen';
 import {Ionicons} from '@expo/vector-icons';
 import {createMaterialBottomTabNavigator} from 'react-navigation-material-bottom-tabs'
 import MealDetailScreen from '../screens/MealDetailScreen';
-import FiltersScreen from '../screens/FavoritesScreen';
+import FiltersScreen from '../screens/FiltersScreen';
 
 const defaultStackNavOptions = {
     headerStyle: {
